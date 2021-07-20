@@ -1,0 +1,21 @@
+# language: es
+
+  Característica: Ingresar a la pagina de banistmo
+    Como un nuevo cliente
+    Quiero ingresar a la pagina www.banistmo.com
+    para validar que el documento generado sea el correcto
+
+  Escenario:Ingresar a la pagina de banistmo
+    Dado que el usuario acceda hasta la web de banistmo
+    Cuando ingresa a la opcion Productos y Servicios
+      | <Productos y Servicios >|
+    Entonces selecciona la opcion de Depositos
+
+Esquema del escenario:Ingresar a la opcion Cuenta de ahorro comercial
+  Dado que se diriga a la opcion Documentos y de clic en la opcion de PDF del documento Contrato único de Productos y Servicios Bancarios
+
+ Entonces Validar que el documento generado sea el correcto.
+
+  Ejemplos:
+
+  | Productos y Servicios |
